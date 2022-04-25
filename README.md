@@ -7,7 +7,7 @@ Anaconda - Python 3.7
 
 ## Algorithm:
 ### Step1:
-<br>
+
 
 ### Step2:
 <br>
@@ -23,14 +23,39 @@ Anaconda - Python 3.7
 
 ## Program:
 ```python
-# Developed By:
-# Register Number:
+# Developed By:LOKESH KRISHNAA M 
+# Register Number: 212220230030
+
 import cv2
 import matplotlib.pyplot as plt
 
 # Write your code to find the histogram of gray scale image and color image channels.
 
+import cv2
+import matplotlib.pyplot as plt 
 
+#gray scale and color image  
+gray_image = cv2.imread("gray.jpg")
+color_image = cv2.imread("tata.jpg")
+
+#resizing and printing the image 
+gray_image= cv2.resize(gray_image, (300,170))
+cv2.imshow('GRAY IMAGE',gray_image)
+
+color_image= cv2.resize(color_image, (300,170))
+cv2.imshow('COLOR IMAGE',color_image)
+
+cv2.waitKey(0)
+
+
+#plotting the gray image in graph
+plt.imshow(gray_image)
+plt.show()
+
+
+#plotting the color image in graph
+plt.imshow(color_image)
+plt.show()
 
 
 
@@ -40,8 +65,21 @@ import matplotlib.pyplot as plt
 
 
 
+
 # Write the code to perform histogram equalization of the image. 
 
+import cv2
+Gray_image=cv2.imread('gray.jpg',0)
+equalize=cv2.equalizeHist(Gray_image)
+#resizing image 
+Gray_image= cv2.resize(Gray_image, (270,190))
+equalize= cv2.resize(equalize, (270,190))
+
+#output
+cv2.imshow('GRAY IMAGE',Gray_image)
+cv2.imshow('EQUALIZED IMAGE',equalize)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
 
 
 
@@ -52,8 +90,9 @@ import matplotlib.pyplot as plt
 ## Output:
 ### Input Grayscale Image and Color Image
 <br>
-<br>
-<br>
+![Screenshot (39)](https://user-images.githubusercontent.com/75234646/165097244-6eecb077-ff8a-4725-b2a2-7f647618d287.png)
+
+
 <br>
 
 ### Histogram of Grayscale Image and any channel of Color Image
@@ -64,8 +103,10 @@ import matplotlib.pyplot as plt
 
 ### Histogram Equalization of Grayscale Image
 <br>
-<br>
-<br>
+
+![Screenshot (41)](https://user-images.githubusercontent.com/75234646/165097271-8ff972bc-ac97-48a5-af5b-2de9a00d61cd.png)
+
+
 <br>
 
 ## Result: 
