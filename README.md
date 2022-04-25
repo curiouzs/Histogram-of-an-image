@@ -34,30 +34,30 @@ import matplotlib.pyplot as plt
 
 import cv2
 import matplotlib.pyplot as plt 
-
 #gray scale and color image  
+
+
 gray_image = cv2.imread("gray.jpg")
 color_image = cv2.imread("tata.jpg")
-
-#resizing and printing the image 
-gray_image= cv2.resize(gray_image, (300,170))
-cv2.imshow('GRAY IMAGE',gray_image)
-
-color_image= cv2.resize(color_image, (300,170))
-cv2.imshow('COLOR IMAGE',color_image)
-
-cv2.waitKey(0)
-
-
 #plotting the gray image in graph
 plt.imshow(gray_image)
 plt.show()
-
-
 #plotting the color image in graph
 plt.imshow(color_image)
 plt.show()
 
+
+
+# Write your code to find the histogram of gray scale image and color image channels.
+gray=cv2.imread("gray.jpg")
+color=cv2.imread("tata.jpg")
+gray=cv2.resize(gray,(500,400))
+color=cv2.resize(color,(500,400))
+
+cv2.imshow("GRAY IMAGE ",gray)
+cv2.imshow("COLOR IMAGE ",color)
+
+cv2.waitKey(0)
 
 
 # Display the histogram of gray scale image and any one channel histogram from color image
