@@ -58,7 +58,9 @@ plt.ylabel("PIXEL COUNT")
 plt.stem(color_hist)
 plt.show()
 # Write the code to perform histogram equalization of the image. 
-import cv2
+import cv2+
+
+
 Gray_image=cv2.imread('gray.jpg',0)
 equalize=cv2.equalizeHist(Gray_image)
 #resizing image 
